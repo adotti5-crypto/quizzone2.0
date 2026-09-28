@@ -27,20 +27,6 @@ const firebaseConfig = {
   measurementId: "G-ZFT0C86E2J"
 };
 
-// Inizializzazione
-const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
-const firebaseConfig = {
-  apiKey: "AIzaSyBU7C35fywrz7QvmP6ZgXatw4ycGGCx7-E",
-  authDomain: "basequiz-2e30c.firebaseapp.com",
-  databaseURL: "https://basequiz-2e30c-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "basequiz-2e30c",
-  storageBucket: "basequiz-2e30c.firebasestorage.app",
-  messagingSenderId: "790064093563",
-  appId: "1:790064093563:web:16a99621eb1ce6e26f05de",
-  measurementId: "G-ZFT0C86E2J"
-};
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);const SDK = 'https://www.gstatic.com/firebasejs/10.14.1';
