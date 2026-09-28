@@ -1,7 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
 import { getDatabase, ref, set, onValue, push, update } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
 
-// Configurazione Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyBU7C35fywrz7QvmP6ZgXatw4ycGGCx7-E",
   authDomain: "basequiz-2e30c.firebaseapp.com",
@@ -13,6 +12,18 @@ const firebaseConfig = {
   measurementId: "G-ZFT0C86E2J"
 };
 
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+
+// Esposizione globale per lo script del quiz
+window.app = app;
+window.database = database;
+window.db = database;
+window.ref = ref;
+window.set = set;
+window.onValue = onValue;
+window.push = push;
+window.update = update;
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 //const analytics = getAnalytics(app);const SDK = 'https://www.gstatic.com/firebasejs/10.14.1';
