@@ -15,7 +15,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);const SDK = 'https://www.gstatic.com/firebasejs/10.14.1';
+//const analytics = getAnalytics(app);const SDK = 'https://www.gstatic.com/firebasejs/10.14.1';
 const MODES = { crossword: 'Cruciverba', bomb: 'Bomba', photo: 'Foto anno' };
 const PHASES = { lobby: 'Iscrizioni aperte', ready: 'Pronti al via', live: 'Si gioca', closed: 'Tempo scaduto', results: 'Risultati del round', between: 'Turno concluso', final: 'Classifica finale' };
 const clone = v => v == null ? v : JSON.parse(JSON.stringify(v));
