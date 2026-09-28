@@ -13,6 +13,7 @@ import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
   apiKey: "AIzaSyBU7C35fywrz7QvmP6ZgXatw4ycGGCx7-E",
   authDomain: "basequiz-2e30c.firebaseapp.com",
+  databaseURL: "https://basequiz-2e30c-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "basequiz-2e30c",
   storageBucket: "basequiz-2e30c.firebasestorage.app",
   messagingSenderId: "790064093563",
