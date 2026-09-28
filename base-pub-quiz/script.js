@@ -13,10 +13,6 @@ const firebaseConfig = {
   measurementId: "G-ZFT0C86E2J"
 };
 
-// Inizializzazione
-
-const database = getDatabase(app);
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);const SDK = 'https://www.gstatic.com/firebasejs/10.14.1';
