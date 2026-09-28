@@ -1,15 +1,21 @@
-/* BASE Quizzone — JavaScript ES modules, Firebase v10.
- * Le soluzioni e il database domande non vengono mai inviati ai giocatori.
- * Il presentatore è l'arbitro: tenere questa scheda aperta durante la serata.
- */
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+import { getDatabase, ref, set, onValue, push, update } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
 
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+// Configurazione Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyBU7C35fywrz7QvmP6ZgXatw4ycGGCx7-E",
+  authDomain: "basequiz-2e30c.firebaseapp.com",
+  databaseURL: "https://basequiz-2e30c-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "basequiz-2e30c",
+  storageBucket: "basequiz-2e30c.firebasestorage.app",
+  messagingSenderId: "790064093563",
+  appId: "1:790064093563:web:16a99621eb1ce6e26f05de",
+  measurementId: "G-ZFT0C86E2J"
+};
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// Inizializzazione
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
 const firebaseConfig = {
   apiKey: "AIzaSyBU7C35fywrz7QvmP6ZgXatw4ycGGCx7-E",
   authDomain: "basequiz-2e30c.firebaseapp.com",
