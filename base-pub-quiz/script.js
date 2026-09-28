@@ -2,7 +2,7 @@
  * Le soluzioni e il database domande non vengono mai inviati ai giocatori.
  * Il presentatore è l'arbitro: tenere questa scheda aperta durante la serata.
  */
-export const firebaseConfig = // Import the functions you need from the SDKs you need
+
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
